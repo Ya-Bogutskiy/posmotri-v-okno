@@ -37,6 +37,11 @@ ol {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 /* Кастомный скроллбар */
 .custom-scrollbar::-webkit-scrollbar {
   width: 4px;
@@ -49,3 +54,281 @@ ol {
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background-color: #D9D9D9;
 }
+
+.page {
+
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 50px auto;
+  align-items: end;
+}
+
+.video-section {
+  position: relative;
+}
+
+video {
+  width: 100%;
+  padding-bottom: 16px;
+}
+
+.content__details {
+
+}
+
+.content__list {
+  margin-top: 26px;
+  margin-bottom: 30px;
+  height: 285px;
+  overflow-y: auto;
+}
+
+.content__list > *:not(:last-child) {
+  margin-bottom: 20px; /* Задайте нужный отступ */
+}
+
+/* Стилизация всей полосы прокрутки */
+.content__list::-webkit-scrollbar {
+  width: 4px; /* Ширина вертикального скролла */
+}
+
+/* Стилизация ползунка (бегунка) */
+.content__list::-webkit-scrollbar-thumb {
+  background: #fff; /* Цвет бегунка */
+}
+
+/* При наведении на ползунок */
+.content__list::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Цвет при наведении */
+}
+
+/* Стилизация области трека (фона скроллбара) */
+.content__list::-webkit-scrollbar-track {
+  background: #222; /* Цвет фона */
+}
+
+/* Стилизация углов трека (возможные отступы) */
+.content__list::-webkit-scrollbar-corner {
+  background: #111; /* Цвет углового соединения */
+}
+
+
+.content__list-container {
+
+}
+
+.content__video-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content__video-card:hover {
+  text-decoration: underline;
+}
+
+.content__video-card:active {
+  background-color: #545050;
+}
+
+.content__video-card:focus {
+  outline: none;
+}
+
+.content__video-card:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
+.content__video-card-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 190px;
+}
+
+.content__video-card-description-container:hover {
+  text-decoration: underline;
+}
+
+.content__video-card-description-container:active {
+  background-color: #545050;
+}
+
+
+.content__video-card-thumbnail {
+  max-width: 194px;
+  padding-right: 3px;
+}
+
+.result__video-container {
+
+}
+
+.title {
+  font-family: Oswald, sans-serif;
+  font-size: 75px;
+  line-height: 94%;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.content__accent {
+  color: #545050;
+}
+
+.content__video-card-title {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.search-form__fieldset {
+  border: none;
+}
+
+.search-form__fieldset-title {
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 8px;
+}
+
+.search-form__textfield {
+  background-color: transparent;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-right: none;
+  border-left: none;
+  padding: 5px 0;
+  font-size: 18px;
+  min-width: 245px;
+  outline: none;
+}
+
+.search-form__label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.search-form__label-text {
+  font-family: inherit;
+  font-size: 18px;
+}
+
+.search-form__label-text:hover {
+  text-decoration: underline;
+}
+
+.search-form__label:active {
+  outline: 1px solid #fff;
+}
+
+.search-form__label:focus {
+  outline: none;
+}
+
+.search-form__label:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
+.search-form__checkbox.visually-hidden {
+  display: none;
+}
+
+.search-form__pseudo-checkbox {
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  transition: all 0.3s;
+}
+
+.search-form__checkbox:checked + .search-form__pseudo-checkbox {
+  background-color: transparent;
+  border-color: #fff;
+}
+
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  transform: translate(-50%, -50%);
+}
+
+.search-form__label-text {
+  font-size: 16px;
+  cursor: pointer;
+  user-select: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.search-form__pseudo-checkbox:hover {
+  cursor: pointer;
+}
+
+.button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  cursor: pointer;
+  height: 34px;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:active {
+  background-color: #545050;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
+}
+
+.search-form__submit-button {
+  width: 194px;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.more-button {
+  width: 100%;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: bold;
+}
+
