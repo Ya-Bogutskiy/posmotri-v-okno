@@ -117,11 +117,6 @@ video {
   background: #111; /* Цвет углового соединения */
 }
 
-
-.content__list-container {
-
-}
-
 .content__video-card {
   display: flex;
   justify-content: space-between;
@@ -159,14 +154,17 @@ video {
   background-color: #545050;
 }
 
+.result__video-container {
+  position: relative;
+}
 
 .content__video-card-thumbnail {
   max-width: 194px;
   padding-right: 3px;
 }
 
-.result__video-container {
-
+.content__list-container {
+  position: relative;
 }
 
 .title {
@@ -332,3 +330,16 @@ video {
   font-weight: bold;
 }
 
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.preloader {
+  position: absolute;
+}
