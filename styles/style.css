@@ -254,6 +254,10 @@ video {
   transition: all 0.3s;
 }
 
+.search-form__pseudo-checkbox:hover {
+  cursor: pointer;
+}
+
 .search-form__checkbox:checked + .search-form__pseudo-checkbox {
   background-color: transparent;
   border-color: #fff;
@@ -276,10 +280,6 @@ video {
   user-select: none;
   display: inline-block;
   vertical-align: middle;
-}
-
-.search-form__pseudo-checkbox:hover {
-  cursor: pointer;
 }
 
 .button {
